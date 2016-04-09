@@ -1,9 +1,9 @@
 (define (sqrt-iter guess x prev-guess)
   (if (good-enough? guess x prev-guess)
-    guess
-    (sqrt-iter (improve guess x)
-        x 
-        guess)))
+      guess
+      (sqrt-iter (improve guess x)
+                 x
+                 guess)))
 (define (improve guess x)
   (average guess (/ x guess)))
 (define (average x y)
@@ -19,11 +19,11 @@
 (sqrt 0.0000000000000000000000001)
 
 (define (good-enough? guess x prev-guess)
-  (< (abs (/ (- prev-guess guess) 
+  (< (abs (/ (- prev-guess guess)
              guess
-          ))
+             ))
      0.0001
-  ))
+     ))
 
 (sqrt 9)
 (sqrt 99999999999999999999999999999999)
