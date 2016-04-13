@@ -16,4 +16,4 @@
 (display (cbrt 3)) (newline)
 (display (cbrt 8)) (newline)
 (display (cbrt 216)) (newline)
-(display (cbrt 5234523452345245)) (newline)
+(display (cbrt 523452345)) (newline)
