@@ -60,4 +60,4 @@
 (test-range "*lin" *lin 1 1 5)
 (test-range "*log" *log 1 1 5)
 (test-range "*lin" *lin 342 653 654)
-(test-range "*lin" *log 342 653 654)
+(test-range "*log" *log 342 653 654)
