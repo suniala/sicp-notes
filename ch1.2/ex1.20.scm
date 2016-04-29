@@ -39,7 +39,7 @@
 
 ; Counting all the remainder operations performed in if predicate expression
 ; and the eventually performed consequent expression we get:
-; -> remainder is performed 15 + 5 = 20 times.
+; -> remainder is performed 14 + 4 = 18 times.
 
 ;
 ; applicative-order evaluation
