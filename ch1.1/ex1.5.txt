@@ -1,0 +1,22 @@
+(define (p) (p))
+
+(define (test x y)
+  (if (= x 0)
+      0
+      y))
+
+(test 0 (p))
+
+; What behavior will Ben observe with an interpreter that uses 
+; applicative-order evaluation?
+
+(test 0 (p))
+; -> will lead to an infinite loop because tries to evaluate (p)
+
+; What behavior will he observe with an interpreter that uses 
+; normal-order evaluation?
+
+(test 0 (p))
+(if (= 0 0) 0 (p))
+0
+; -> results in 0, does not try to evaluate (p)
