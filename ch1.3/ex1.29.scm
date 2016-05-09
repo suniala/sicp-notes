@@ -1,3 +1,4 @@
+; sum procedure from book
 (define (sum term a next b)
   (if (> a b)
       0
@@ -21,11 +22,13 @@
 (define (cube x)
   (* x x x))
 
+; integration procedure from book
 (define (integral-1 f a b dx)
   (define (add-dx x) (+ x dx))
   (* (sum f (+ a (/ dx 2.0)) add-dx b)
      dx))
 
+; integration procedure using Simpson's Rule
 (define (integral-2 f a b n)
   (define (h)
     (/ (- b a) n))
@@ -34,7 +37,6 @@
   (define (even? n)
     (= (remainder n 2) 0))
   (define (term k)
-    ;(display "(term ")(display k)(display ")")(newline)
     (cond ((= k 0) (y k))
           ((= k n) (y k))
           ((even? k) (* 2 (y k)))
